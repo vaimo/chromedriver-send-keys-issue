@@ -51,7 +51,7 @@ class WebDriver extends \Robo\Task\Base\Exec
 
         if (!$this->ensurePortReadiness($this->port, $this->availabilityTimeout)) {
             throw new \Exception(
-                sprintf('Failed to endure that web-driver is ready on %s', $this->port)
+                sprintf('Failed to ensure that web-driver is ready on %s', $this->port)
             );
         }
 
