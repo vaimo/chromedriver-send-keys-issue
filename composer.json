@@ -1,5 +1,5 @@
 {
-    "name": "vaimo/tmp-chromedriver-missing-keys",
+    "name": "vaimo/chromedriver-send-keys-issue",
     "description": "Example of some keys being eaten by the chromedriver",
     "type": "project",
     "require": {
