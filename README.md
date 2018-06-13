@@ -1,6 +1,11 @@
 # Acceptance test showcase on flawed chromedriver character data processing
 
-This repository illustrates how data that is passed to 'sendKeys' gets interpreted in an unexpected way.
+This repository illustrates how data that is passed to 'sendKeys' gets interpreted in an unexpected way:
+
+Intended input: 'hello'
+Result: 'llo'
+
+Issue only repeatable when running it on Linux and seems NOT to be repeatable when running on Mac.
 
 ## Pre-requisites
 
