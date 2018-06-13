@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
+_is_macosx() {
+    if [[ "${OSTYPE}" == "darwin"* ]]; then
+        return 0
+    fi
+
+    return 1
+}
+
+if _is_macosx ; then
+    echo "Setup script only available on linux os"
+    return 1
+fi
+
 if ! command -v google-chrome ; then
     echo "$(tput setaf 2)This script will install Google Chrome$(tput sgr0)"
     read -p "Press $(tput setaf 15)ENTER$(tput sgr0) to continue"

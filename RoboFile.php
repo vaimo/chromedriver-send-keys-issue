@@ -19,7 +19,7 @@ class RoboFile extends \Robo\Tasks
      */
     private $chromeDriverBinaries = [
         'linux' => 'bin/chromedriver',
-        'max' => 'bin/chromedriver',
+        'mac' => 'bin/chromedriver',
         'windows' => 'bin/chromedriver.exe'
     ];
 
