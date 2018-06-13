@@ -4,9 +4,10 @@
     "type": "project",
     "require": {
         "codeception/codeception": "^2.3",
-        "vaimo/binary-chromedriver": "^2.35",
+        "tivie/php-os-detector": "^1.0",
         "consolidation/robo": "^1.1",
-        "monolog/monolog": "^1.23"
+        "monolog/monolog": "^1.23",
+        "vaimo/binary-chromedriver": "^2.35"
     },
     "config": {
         "bin-dir": "bin"
