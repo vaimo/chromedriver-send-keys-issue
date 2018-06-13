@@ -1,8 +1,4 @@
 <?php
-/**
- * Copyright © Vaimo Group. All rights reserved.
- * See LICENSE_VAIMO.txt for license details.
- */
 
 class WebDriver extends \Robo\Task\Base\Exec
 {
