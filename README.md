@@ -2,8 +2,8 @@
 
 This repository illustrates how data that is passed to 'sendKeys' gets interpreted in an unexpected way:
 
-Intended input: 'hello'
-Result: 'llo'
+* Intended input: 'hello'
+* Resulting field value: 'llo'
 
 Issue only repeatable when running it on Linux and seems NOT to be repeatable when running on Mac.
 
