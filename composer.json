@@ -1,0 +1,27 @@
+{
+    "name": "vaimo/tmp-chromedriver-missing-keys",
+    "description": "Example of some keys being eaten by the chromedriver",
+    "type": "project",
+    "require": {
+        "codeception/codeception": "^2.3",
+        "vaimo/binary-chromedriver": "^2.35",
+        "consolidation/robo": "^1.1",
+        "monolog/monolog": "^1.23"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "scripts": {
+        "test": "bin/robo run:tests --ansi"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:vaimo/binary-chromedriver.git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org/"
+        }
+    ]
+}

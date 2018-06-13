@@ -1,0 +1,18 @@
+actor_suffix: Tester
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: environments
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+        - Codeception\Extension\Logger
+modules:
+    enabled:
+        - Asserts
+        - WebDriver:
+            url: https://www.google.com
+            browser: chrome
+            port: 1234 # configured by Robo
