@@ -10,6 +10,12 @@
         "monolog/monolog": "^1.23",
         "vaimo/binary-chromedriver": "^2.35"
     },
+    "authors": [
+        {
+            "name": "Allan Paiste",
+            "email": "allan.paiste@vaimo.com"
+        }
+    ],
     "config": {
         "bin-dir": "bin"
     },
