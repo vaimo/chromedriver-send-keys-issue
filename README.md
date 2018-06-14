@@ -5,11 +5,11 @@ This repository illustrates how data that is passed to 'sendKeys' gets interpret
 * Intended input: 'hello'
 * Resulting field value: 'llo'
 
-Issue only repeatable when running it on Linux and seems NOT to be repeatable when running on Mac.
-
 ## Pre-requisites
 
-1. Have composer pre-installed (https://getcomposer.org)
+1. Use some Linux distro (issue not repeatable on MacOS, on validation done on Windows)
+1. Have Composer installed (https://getcomposer.org)
+1. Make sure you have the latest Chrome browser installed.
 
 ## Installation
 
@@ -20,4 +20,4 @@ Issue only repeatable when running it on Linux and seems NOT to be repeatable wh
 ## Running the tests
 
 1. `composer test` # executes tests with headless chrome
-1. (alternative) `composer test -- --use chrome-` # executes tests \w visible Chrome GUI  
+1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI  
