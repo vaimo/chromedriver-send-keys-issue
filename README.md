@@ -9,7 +9,7 @@ Observation: seems that characters 'e', 'r', 's' are translated as functional ke
 
 Tested with: 
 
-* Google Chrome 67.0.3396.62
+* Google Chrome 67.0.3396.87
 * ChromeDriver 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
 
 ## Pre-requisites
