@@ -1,4 +1,4 @@
-# Acceptance test showcase on flawed chromedriver character data processing
+# Showcase on chromedriver character data processing glitch
 
 This repository illustrates how data that is passed to 'sendKeys' gets interpreted in an unexpected way:
 
