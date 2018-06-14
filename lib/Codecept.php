@@ -5,14 +5,14 @@
  */
 namespace Vaimo\ChromeDriverExample;
 
-use Vaimo\ChromeDriverExample\Interfaces\WebDriverInterface;
-
 class Codecept extends \Robo\Task\Testing\Codecept
 {
+    const WEB_DRIVER_PORT = 'CC_WEB_DRIVER_PORT';
+
     public function port($port)
     {
         $this->envVars([
-            'CC_WEB_DRIVER_PORT' => $port
+            \Vaimo\ChromeDriverExample\Codecept::WEB_DRIVER_PORT => $port
         ]);
 
         return $this;

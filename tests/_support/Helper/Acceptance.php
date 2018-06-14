@@ -22,7 +22,7 @@ class Acceptance extends \Codeception\Module
         $webDriver = $this->getModule('WebDriver');
 
         $this->webDriverConfigUpdates = array_filter([
-            'port' => getenv('CC_WEB_DRIVER_PORT')
+            'port' => getenv(\Vaimo\ChromeDriverExample\Codecept::WEB_DRIVER_PORT)
         ]);
 
         $webDriver->_reconfigure($this->webDriverConfigUpdates);
