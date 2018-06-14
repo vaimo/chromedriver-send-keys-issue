@@ -19,4 +19,5 @@ Issue only repeatable when running it on Linux and seems NOT to be repeatable wh
 
 ## Running the tests
 
-1. composer test
+1. composer test # executes tests with headless chrome
+1. (alternative) composer test -- --use chrome-gui # executes tests visible Chrome GUI  
