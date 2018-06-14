@@ -20,4 +20,4 @@ This repository illustrates how data that is passed to 'sendKeys' gets interpret
 ## Running the tests
 
 1. `composer test` # executes tests with headless chrome
-1. (alternative) `composer test -- --use chrome-` # executes tests \w visible Chrome GUI  
+1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI  
