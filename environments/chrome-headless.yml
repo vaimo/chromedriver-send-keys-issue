@@ -1,3 +1,5 @@
+# Copyright (c) Vaimo Group. All rights reserved.
+# See LICENSE_VAIMO.txt for license details.
 modules:
     config:
         WebDriver:
@@ -6,4 +8,3 @@ modules:
             capabilities:
                 chromeOptions:
                     args: ["--headless", "--disable-gpu", "window-size=1280,1024"]
-                    binary: "/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"

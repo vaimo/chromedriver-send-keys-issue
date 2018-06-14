@@ -1,3 +1,5 @@
+# Copyright (c) Vaimo Group. All rights reserved.
+# See LICENSE_VAIMO.txt for license details.
 actor_suffix: Tester
 paths:
     tests: tests
@@ -12,7 +14,3 @@ extensions:
 modules:
     enabled:
         - Asserts
-        - WebDriver:
-            url: https://www.google.com
-            browser: chrome
-            port: 1234 # configured by Robo

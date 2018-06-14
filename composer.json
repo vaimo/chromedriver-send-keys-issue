@@ -1,7 +1,8 @@
 {
     "name": "vaimo/chromedriver-send-keys-issue",
-    "description": "Example of some keys being eaten by the chromedriver",
     "type": "project",
+    "license": "MIT",
+    "description": "An example of some keys being eaten by the chrome-driver on Linux",
     "require": {
         "codeception/codeception": "^2.3",
         "tivie/php-os-detector": "^1.0",
@@ -14,6 +15,11 @@
     },
     "scripts": {
         "test": "bin/robo run:tests --ansi"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vaimo\\ChromeDriverExample\\": "lib/"
+        }
     },
     "repositories": [
         {

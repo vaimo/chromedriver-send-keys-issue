@@ -1,4 +1,9 @@
 <?php
+/**
+ * Copyright © Vaimo Group. All rights reserved.
+ * See LICENSE_VAIMO.txt for license details.
+ */
+namespace Vaimo\ChromeDriverExample;
 
 class WebDriver extends \Robo\Task\Base\Exec
 {
@@ -26,9 +31,14 @@ class WebDriver extends \Robo\Task\Base\Exec
         return $this;
     }
 
+    public function getPort()
+    {
+        return $this->port;
+    }
+
     /**
      * @return \Robo\Result
-     * @throws Exception
+     * @throws \Exception
      */
     public function run()
     {

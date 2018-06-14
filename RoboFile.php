@@ -1,7 +1,11 @@
 <?php
-include 'WebDriver.php';
+/**
+ * Copyright © Vaimo Group. All rights reserved.
+ * See LICENSE_VAIMO.txt for license details.
+ */
 
 use Tivie\OS;
+use Vaimo\ChromeDriverExample as Lib;
 
 class RoboFile extends \Robo\Tasks
 {
@@ -25,11 +29,12 @@ class RoboFile extends \Robo\Tasks
     }
 
     /**
-     * @throws Exception
+     * @param array $opts
+     * @option string $use Name of the browser setup used for running the tests.
+     * @throws \Exception
      */
-    public function runTests()
+    public function runTests($opts = ['use' => 'chrome-headless'])
     {
-        $osName = $this->getOperationSystemName();
         $port = $this->allocatePort();
 
         $this->taskWebDriver()
@@ -38,24 +43,35 @@ class RoboFile extends \Robo\Tasks
             ->background()
             ->run();
 
-        $this->taskCodecept()
-            ->envVars(['CC_WEB_DRIVER_PORT' => $port])
+        $this->taskTestRunner()
+            ->port($port)
             ->suite('acceptance')
-            ->env(sprintf('chrome---%s', $osName))
+            ->env($opts['use'])
             ->run();
     }
 
     /**
-     * @return \WebDriver
+     * @return Lib\WebDriver
      */
     private function taskWebDriver()
     {
         $osName = $this->getOperationSystemName();
 
-        /** @var \WebDriver $driver */
-        $driver = $this->task(WebDriver::class, $this->chromeDriverBinaries[$osName]);
+        /** @var Lib\WebDriver $driver */
+        $driver = $this->task(Lib\WebDriver::class, $this->chromeDriverBinaries[$osName]);
 
         return $driver;
+    }
+
+    /**
+     * @return Lib\Codecept
+     */
+    private function taskTestRunner()
+    {
+        /** @var Lib\Codecept $testRunner */
+        $testRunner = $this->task(Lib\Codecept::class, 'bin/codecept');
+
+        return $testRunner;
     }
 
     private function allocatePort($bindAddress = '127.0.0.1')

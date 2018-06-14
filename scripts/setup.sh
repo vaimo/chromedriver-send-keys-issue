@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+: <<'COPYRIGHT'
+ Copyright (c) Vaimo Group. All rights reserved.
+ See LICENSE_VAIMO.txt for license details.
+COPYRIGHT
+
 _is_macosx() {
     if [[ "${OSTYPE}" == "darwin"* ]]; then
         return 0
@@ -11,11 +16,11 @@ _check_chrome_availablity() {
     if _is_macosx && [ -f /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome ] ; then
         return 0
     fi
-    
+
     if command -v google-chrome ; then
         return 0
     fi
-    
+
     return 1
 }
 

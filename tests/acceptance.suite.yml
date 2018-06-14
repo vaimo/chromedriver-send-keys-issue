@@ -1,4 +1,10 @@
+# Copyright (c) Vaimo Group. All rights reserved.
+# See LICENSE_VAIMO.txt for license details.
 actor: AcceptanceTester
 modules:
     enabled:
         - Helper\Acceptance
+        - WebDriver:
+            url: https://www.google.com
+            browser: chrome
+            port: 1234 # configured by Robo
