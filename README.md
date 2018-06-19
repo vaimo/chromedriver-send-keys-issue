@@ -12,6 +12,8 @@ Tested with:
 * Google Chrome 67.0.3396.87
 * ChromeDriver 2.40.565383 (76257d1ab79276b2d53ee976b2c3e3b9f335cde7)
 
+More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
+
 ## Pre-requisites
 
 1. Use some Linux distro (issue not repeatable on MacOS, on validation done on Windows)
