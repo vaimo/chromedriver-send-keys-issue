@@ -1,11 +1,13 @@
 # Showcase on chromedriver character data processing glitch
 
-This repository illustrates how data that is passed to 'sendKeys' gets interpreted in an unexpected way:
+This repository illustrates how data that is passed to 'sendKeys' gets interpreted by chromedriver (http://chromedriver.chromium.org) on Linux in an unexpected way:
 
 * Intended input: 'hello'
 * Resulting field value: 'llo'
 
-Observation: seems that characters 'e', 'r', 's' are translated as functional keys, where 'e' acts as backspace.
+Observation: 
+
+Seems that characters 'e', 'r', 's' are translated as functional keys, where 'e' acts as backspace.
 
 Tested with: 
 
