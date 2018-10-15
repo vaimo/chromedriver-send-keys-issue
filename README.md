@@ -21,10 +21,11 @@ More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
 1. Use some Linux distro (issue not repeatable on MacOS, on validation done on Windows)
 1. Have Composer installed (https://getcomposer.org)
 1. Make sure you have the latest Chrome browser installed.
+1. (updating Chrome) `sudo apt-get update && sudo apt-get --only-upgrade install google-chrome-stable`
 
 ## Installation
 
-1. `git clone git@github.com:vaimo/chromedriver-send-keys-issue.git` 
+1. `git clone git@github.com:vaimo/chromedriver-send-keys-issue.git`
 1. `cd chromedriver-send-keys-issue && composer install`
 1. `. scripts/setup.sh` # installs Google Chrome if needed
 
