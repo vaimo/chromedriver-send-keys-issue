@@ -5,7 +5,7 @@ This repository illustrates how data that is passed to 'sendKeys' gets interpret
 * Intended input: 'hello'
 * Resulting field value: 'llo'
 
-Observation: 
+## Observation
 
 Seems that characters 'e', 'r', 's' are translated as functional keys, where 'e' acts as backspace.
 
@@ -19,6 +19,10 @@ Tested/repeated with:
   * 2.44.609551 for Linux 64Bits (5d576e9a44fe4c5b6a07e568f1ebc753f1214634)
   
 More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
+
+# Repetition
+
+The guide on how to repeat the issue.
 
 ## Pre-requisites
 
@@ -38,7 +42,7 @@ More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
 1. `composer test` # executes tests with headless chrome
 1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI
 
-## Fixing the issue
+# Fixing (or workaround)
 
 The issue can not be encountered if user make sure that proper keymap is configured for the system keyboard:
 
