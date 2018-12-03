@@ -46,7 +46,7 @@ The guide on how to repeat the issue.
 
 # Fix/workaround
 
-Although it was still repeatable with latest Chrome (70.0.3538.110) and Driver (2.44.609551) releases, I was actually able to get rid of the issue after configuring the keyboard layout in the system before running the tests:
+One can get rid of the issue after configuring the keyboard layout in the system before running the tests:
 
 ```shell
 setxkbmap en_US
@@ -54,7 +54,7 @@ setxkbmap en_US
 
 ... which seems to cause the ChromeDriver to use certain letters as if they're function keys. Note that this affects situations where you're running your tests with ChromeDriver against Chrome with GUI.
 
-So why should we care about that when you're using headless chrome?
+_So why should we care about that when you're using headless chrome?_
 
 Well. Turns out that as long as there's DISPLAY environment variable defined, the keyboard layout comes from the display server setup, even when it's not needed. This could be avoided when temporarily resetting the environment value.
 
