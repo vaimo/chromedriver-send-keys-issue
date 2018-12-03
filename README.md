@@ -9,11 +9,15 @@ Observation:
 
 Seems that characters 'e', 'r', 's' are translated as functional keys, where 'e' acts as backspace.
 
-Tested with: 
+Tested/repeated with: 
 
-* Google Chrome 69.0.3497.100
-* ChromeDriver 2.42 for Linux 64Bits (acfcc29fb03df9e913ef4c360a121ad1)
-
+* Google Chrome 
+  * 69.0.3497.100
+  * 70.0.3538.110
+* ChromeDriver: 
+  * 2.42 for Linux 64Bits (acfcc29fb03df9e913ef4c360a121ad1)
+  * 2.44.609551 for Linux 64Bits (5d576e9a44fe4c5b6a07e568f1ebc753f1214634)
+  
 More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
 
 ## Pre-requisites
