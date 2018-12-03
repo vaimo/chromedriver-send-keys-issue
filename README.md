@@ -42,7 +42,7 @@ The guide on how to repeat the issue.
 1. `composer test` # executes tests with headless chrome
 1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI
 
-# Fixing (or workaround)
+# Fix/workaround
 
 The issue can not be encountered if user make sure that proper keymap is configured for the system keyboard:
 
