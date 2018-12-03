@@ -20,7 +20,7 @@ Tested/repeated with:
   
 More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
 
-# Repetition
+# Repeating the issue
 
 The guide on how to repeat the issue.
 
