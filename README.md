@@ -36,4 +36,14 @@ More info: https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771
 ## Running the tests
 
 1. `composer test` # executes tests with headless chrome
-1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI  
+1. (alternative) `composer test -- --use chrome-gui` # executes tests \w visible Chrome GUI
+
+## Fixing the issue
+
+The issue can not be encountered if user make sure that proper keymap is configured for the system keyboard:
+
+```shell
+setxkbmap en_US
+```
+
+This makes the test that is bundled with this repository and that illustrates the issue to pass with flying colors.
