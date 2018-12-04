@@ -46,7 +46,7 @@ The guide on how to repeat the issue.
 
 # Fix/workaround
 
-One can get rid of the issue after configuring the keyboard layout in the system before running the tests:
+One can [avoid this issue](https://bugs.chromium.org/p/chromedriver/issues/detail?id=1771#c75) by configuring the keyboard layout in the system before running the tests:
 
 ```shell
 setxkbmap en_US
